@@ -150,6 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Images\Get-Base64.ps1" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -161,8 +162,18 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Images\" />
+    <Content Include="Images\avatar.png" />
+    <Content Include="Images\avatar_300.png" />
+    <Content Include="Images\install.png" />
+    <Content Include="Images\Logo.png" />
+    <Content Include="Images\Logo128.png" />
+    <Content Include="Images\Logo32.png" />
+    <Content Include="Images\Logo64.png" />
+    <Content Include="Images\Powershell_64.png" />
+    <Content Include="Images\Powershell_black_64.png" />
+    <Content Include="Images\question.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
