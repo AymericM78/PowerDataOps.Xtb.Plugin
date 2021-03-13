@@ -57,6 +57,11 @@ namespace PowerDataOps.Xtb.Plugin
             }
 
             var cs = this.ConnectionDetail.ConnectionString;
+            if(string.IsNullOrWhiteSpace(cs))
+            {
+                cs = this.ConnectionDetail.GetConnectionString();
+                cs = cs.Replace("********", this.ConnectionDetail.UserPasswordEncrypted);
+            }
 
             var commandBuilder = new StringBuilder();
             commandBuilder.AppendLine($"Import-Module PowerDataOps -DisableNameChecking; ");
